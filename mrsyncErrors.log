@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "./mrsync.py", line 136, in <module>
+    utilities.block_check_process(forkedProcessId)
+  File "/Users/valentinbencheci/Desktop/mrsync/utilitiesModule.py", line 49, in block_check_process
+    return os.waitpid(pid, 0)
+  File "./mrsync.py", line 21, in handler_sigUSR1_sigINT
+    utilities.print_error(20)
+  File "/Users/valentinbencheci/Desktop/mrsync/utilitiesModule.py", line 88, in print_error
+    os.write(1, (errors[typeError] + "\n").encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./mrsync.py", line 144, in <module>
+    utilities.print_error(10)
+  File "/Users/valentinbencheci/Desktop/mrsync/utilitiesModule.py", line 88, in print_error
+    os.write(1, (errors[typeError] + "\n").encode("utf-8"))
+BrokenPipeError: [Errno 32] Broken pipe
+.receive(rfd))
+  File "/Users/valentinbencheci/Desktop/mrsync/messageModule.py", line 33, in receive
+    return pickle.loads(data)
+EOFError: Ran out of input
