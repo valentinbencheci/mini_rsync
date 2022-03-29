@@ -4,7 +4,7 @@
 ```
        mrsync - minimalistic version of rsync
 ```
-## SYNOPSIS
+## 2SYNOPSIS
 ```
        mrsync [OPTION]... SRC [SRC]... DEST
 
